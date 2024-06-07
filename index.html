@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Staybnd - Travel Website</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -17,14 +18,15 @@
     <!-- Hero Section -->
     <div class="header">
       <!-- Navbar -->
-      <nav>
+      <nav id="navBar">
         <img src="images/logo.png" class="logo" alt="logo" />
         <ul class="nav-links">
-          <li><a href="#">Popular Places</a></li>
+          <li><a href="#" class="active">Popular Places</a></li>
           <li><a href="#">Travel Outside</a></li>
           <li><a href="#">Online Packages</a></li>
         </ul>
         <a href="#" class="register-btn">Register Now</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
       </nav>
 
       <div class="container">
@@ -62,8 +64,8 @@
     </div>
     <!-- Hero Section End -->
 
-    <!-- Section 1 Starts -->
     <div class="container">
+      <!-- Section 1-->
       <h2 class="subtitle">Exclusive</h2>
       <div class="exclusives">
         <!-----------10 Images ------------->
@@ -151,6 +153,7 @@
       </div>
       <!-- Exclusive Ends Here -->
 
+      <!-- Section 2-->
       <!--! Trending Places Starts -->
       <h2 class="subtitle">Trending Places</h2>
       <div class="trending">
@@ -174,14 +177,14 @@
           <h3>New Delhi</h3>
         </div>
       </div>
-
+      <!-- Section 3-->
       <!--! Call To Action Starts-->
       <div class="cta">
         <h3>Sharing <br />Is Earning Now</h3>
         <p>Great opportunity to make money by <br />sharing your extra space</p>
         <a href="#" class="cta-btn">Know More</a>
       </div>
-
+      <!-- Section 4-->
       <!--! Travelers Stories Starts -->
       <h2 class="subtitle">Travelers' Stories</h2>
       <div class="stories">
